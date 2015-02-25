@@ -23,6 +23,27 @@
 			remoteGlobalIDString = 84381CCC1A9DE297003B9B5D;
 			remoteInfo = CoreDataModelExample;
 		};
+		84381D9B1A9DE2E1003B9B5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84381D961A9DE2E1003B9B5D /* CoreDataModel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 840358A41A9B9A5700188EC6;
+			remoteInfo = CoreDataModel;
+		};
+		84381D9D1A9DE2E1003B9B5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84381D961A9DE2E1003B9B5D /* CoreDataModel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 840358CC1A9BB35300188EC6;
+			remoteInfo = CoreDataModelSchema;
+		};
+		84381D9F1A9DE308003B9B5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84381D961A9DE2E1003B9B5D /* CoreDataModel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 840358A31A9B9A5700188EC6;
+			remoteInfo = CoreDataModel;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +57,7 @@
 		84381CE21A9DE297003B9B5D /* CoreDataModelExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataModelExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84381CE71A9DE297003B9B5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84381CE81A9DE297003B9B5D /* CoreDataModelExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModelExampleTests.swift; sourceTree = "<group>"; };
+		84381D961A9DE2E1003B9B5D /* CoreDataModel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreDataModel.xcodeproj; path = ../CoreDataModel/CoreDataModel.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +81,7 @@
 		84381CC41A9DE297003B9B5D = {
 			isa = PBXGroup;
 			children = (
+				84381D961A9DE2E1003B9B5D /* CoreDataModel.xcodeproj */,
 				84381CCF1A9DE297003B9B5D /* CoreDataModelExample */,
 				84381CE51A9DE297003B9B5D /* CoreDataModelExampleTests */,
 				84381CCE1A9DE297003B9B5D /* Products */,
@@ -112,6 +135,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		84381D971A9DE2E1003B9B5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84381D9C1A9DE2E1003B9B5D /* CoreDataModel.framework */,
+				84381D9E1A9DE2E1003B9B5D /* CoreDataModelSchema.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,6 +158,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				84381DA01A9DE308003B9B5D /* PBXTargetDependency */,
 			);
 			name = CoreDataModelExample;
 			productName = CoreDataModelExample;
@@ -179,6 +212,12 @@
 			mainGroup = 84381CC41A9DE297003B9B5D;
 			productRefGroup = 84381CCE1A9DE297003B9B5D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 84381D971A9DE2E1003B9B5D /* Products */;
+					ProjectRef = 84381D961A9DE2E1003B9B5D /* CoreDataModel.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				84381CCC1A9DE297003B9B5D /* CoreDataModelExample */,
@@ -186,6 +225,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		84381D9C1A9DE2E1003B9B5D /* CoreDataModel.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CoreDataModel.framework;
+			remoteRef = 84381D9B1A9DE2E1003B9B5D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84381D9E1A9DE2E1003B9B5D /* CoreDataModelSchema.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CoreDataModelSchema.bundle;
+			remoteRef = 84381D9D1A9DE2E1003B9B5D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		84381CCB1A9DE297003B9B5D /* Resources */ = {
@@ -232,6 +288,11 @@
 			isa = PBXTargetDependency;
 			target = 84381CCC1A9DE297003B9B5D /* CoreDataModelExample */;
 			targetProxy = 84381CE31A9DE297003B9B5D /* PBXContainerItemProxy */;
+		};
+		84381DA01A9DE308003B9B5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CoreDataModel;
+			targetProxy = 84381D9F1A9DE308003B9B5D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -338,6 +399,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/ctinnell/Development/XCode/SwiftDataModelTemplate/CoreDataModel/build/Debug-iphonesimulator",
+				);
 				INFOPLIST_FILE = CoreDataModelExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,6 +413,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/ctinnell/Development/XCode/SwiftDataModelTemplate/CoreDataModel/build/Debug-iphonesimulator",
+				);
 				INFOPLIST_FILE = CoreDataModelExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
