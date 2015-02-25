@@ -13,6 +13,7 @@
 		84381CDA1A9DE297003B9B5D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84381CD91A9DE297003B9B5D /* Images.xcassets */; };
 		84381CDD1A9DE297003B9B5D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84381CDB1A9DE297003B9B5D /* LaunchScreen.xib */; };
 		84381CE91A9DE297003B9B5D /* CoreDataModelExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84381CE81A9DE297003B9B5D /* CoreDataModelExampleTests.swift */; };
+		846F56AA1A9E011000919E29 /* CoreDataModelSchema.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 84381D9E1A9DE2E1003B9B5D /* CoreDataModelSchema.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -250,6 +251,7 @@
 			files = (
 				84381CD81A9DE297003B9B5D /* Main.storyboard in Resources */,
 				84381CDD1A9DE297003B9B5D /* LaunchScreen.xib in Resources */,
+				846F56AA1A9E011000919E29 /* CoreDataModelSchema.bundle in Resources */,
 				84381CDA1A9DE297003B9B5D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +478,7 @@
 				84381CEE1A9DE297003B9B5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84381CEF1A9DE297003B9B5D /* Build configuration list for PBXNativeTarget "CoreDataModelExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +487,7 @@
 				84381CF11A9DE297003B9B5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
